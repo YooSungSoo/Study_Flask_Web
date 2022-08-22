@@ -41,4 +41,3 @@ def create_app():
     app.jinja_env.filters['datetime'] = format_datetime
 
     return app
-    
