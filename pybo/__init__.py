@@ -2,7 +2,6 @@ from flask import Flask
 from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import MetaData
-
 import config
 
 naming_convention = {
@@ -41,3 +40,5 @@ def create_app():
     app.jinja_env.filters['datetime'] = format_datetime
 
     return app
+
+    # set FLASK_APP=pybo
